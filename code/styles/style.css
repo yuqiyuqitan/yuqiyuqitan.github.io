@@ -36,7 +36,7 @@
     box-shadow: 0 -1px 2px 0 rgba(1, 1, 1, 0.2); }
 
 .right-side-image img {
-  max-width: 300px; }
+  max-width: 400px; }
 
 .right-side-image figcaption {
   text-align: center; }
@@ -102,6 +102,17 @@ a {
   .small-section {
     padding-top: 100px; } }
 
+#research div::after {
+  content: "";
+  background: url("code/images/research.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
 @media (max-width: 800px) {
   .two-column-responsive {
     display: grid;
@@ -112,7 +123,7 @@ a {
 @media (min-width: 800px) {
   .two-column-responsive {
     display: grid;
-    grid-template-columns: minmax(600px, auto) auto;
+    grid-template-columns: minmax(500px, auto) auto;
     width: 100%; }
     .two-column-responsive figure {
       align-self: center; }

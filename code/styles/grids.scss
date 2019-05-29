@@ -11,7 +11,7 @@
 @media (min-width: 800px) {
   .two-column-responsive {
     display: grid;
-    grid-template-columns: minmax(600px, auto) auto;
+    grid-template-columns: minmax(500px, auto) auto;
     width: 100%;
 
     figure {

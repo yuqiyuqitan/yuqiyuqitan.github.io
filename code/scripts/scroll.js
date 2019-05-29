@@ -45,7 +45,7 @@ function menuSelect() {
 //compute the tops of various divs
 function computeTops() {
     //store the top of the sections
-    section_top[0] = $("#itMe").offset().top;
+    section_top[0] = $("#about").offset().top;
     section_top[1] = $("#research").offset().top;
     section_top[2] = $("#teaching").offset().top;
     section_top[3] = $("#interests").offset().top;
