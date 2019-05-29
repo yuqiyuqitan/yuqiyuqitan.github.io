@@ -1,0 +1,25 @@
+@media (max-width: 800px) {
+  .two-column-responsive {
+    display: grid;
+    grid-template-columns: auto;
+
+    figure {
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .two-column-responsive {
+    display: grid;
+    grid-template-columns: minmax(600px, auto) auto;
+    width: 100%;
+
+    figure {
+      align-self: center;
+    }
+
+    .column1 {
+      width: 100%;
+    }
+  }
+}
