@@ -102,17 +102,6 @@ a {
   .small-section {
     padding-top: 100px; } }
 
-#research div::after {
-  content: "";
-  background: url("code/images/research.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
 @media (max-width: 800px) {
   .two-column-responsive {
     display: grid;
