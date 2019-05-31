@@ -1,44 +1,47 @@
-.right-side-image {
-  img {
-    max-width: 300px;
-  }
-
-  figcaption {
-    text-align: center;
+@media (min-width: 800px) {
+  p {
+    text-align: justify;
   }
 }
 
-.notesTable {
-  display: grid;
-  grid-template-columns: 18ex 1fr;
-  line-height: 1.25;
-  grid-row-gap: 4em;
-  align-items: start;
-  font-size: small;
-
-  h3 {
-    margin: 0;
-    padding: 0.5em;
-    align-self: center;
-  }
-
-  .nestedGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    align-items: start;
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
-    padding: 0.5em;
-    border-left: 2px solid lightgray;
-  }
+body {
+  max-width: 1050px;
+  margin: 0 auto 100px;
+  line-height: 2;
+  font-family: 'Roboto', sans-serif;
 }
 
-figure.logo {
+p {
+  padding-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+figure {
+  &.right-side-image {
+    img {
+      max-width: 300px;
+    }
+
+    figcaption {
       text-align: center;
-      padding-top: 10em;
-      padding-bottom: 10em;
-      img {
-        width: 80%;
-        max-width: 600px;
-      }
+    }
+  }
+
+  &.logo {
+        text-align: center;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        img {
+          width: 80%;
+          max-width: 300px;
+        }
+  }
 }

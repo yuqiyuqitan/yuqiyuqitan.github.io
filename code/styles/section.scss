@@ -20,3 +20,21 @@
     padding-top: 100px;
   }
 }
+
+@media (max-width: 800px) {
+  .two-column-responsive {
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) {
+  .two-column-responsive {
+    flex-direction: row;
+  }
+}
+
+.two-column-responsive {
+  display: flex;
+  figure {
+    align-self: center;
+  }
+}
