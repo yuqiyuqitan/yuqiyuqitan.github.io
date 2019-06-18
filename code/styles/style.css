@@ -26,7 +26,7 @@
     text-align: center; }
   #mainMenu .menuSelected {
     color: white;
-    background-color: #4F2683;
+    background-color: steelblue;
     box-shadow: 0 -1px 2px 0 rgba(1, 1, 1, 0.2); }
 
 @media (min-width: 800px) {
