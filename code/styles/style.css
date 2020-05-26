@@ -91,7 +91,7 @@ a {
     color: forestgreen; }
   a:hover {
     color: crimson; }
-    
+
 .section {
   margin: auto;
   background-color: white;
@@ -107,5 +107,12 @@ a {
     align-self: center; }
 
 table.alternate_color tr:nth-child(odd){
-   background-color: #f2f2f2;
+   background-color: #f6f8fa;
+}
+
+td {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
