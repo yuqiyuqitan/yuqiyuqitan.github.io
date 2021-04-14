@@ -85,10 +85,9 @@ figure.logo {
     max-width: 500px; }
 
 a {
-  text-decoration: none;
-  color: peru; }
+  text-decoration: none;}
   a:link {
-    color: forestgreen; }
+    color: #007c92; }
   a:hover {
     color: crimson; }
 
