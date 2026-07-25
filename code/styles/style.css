@@ -104,6 +104,8 @@ a {
   display: flex; }
   .two-column-responsive figure {
     align-self: center; }
+  .two-column-responsive figure.align-top {
+    align-self: flex-start; }
 
 table.alternate_color tr:nth-child(odd){
    background-color: #f6f8fa;
@@ -294,3 +296,42 @@ details.more-list summary {
   margin: 0.2em 0 1em; }
   .inline-list li {
     padding-bottom: 0.25em; }
+
+/* ---------- Blog ---------- */
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+  margin-top: 1em; }
+
+.post-card {
+  padding-bottom: 1.4em;
+  border-bottom: 1px solid #eee; }
+  .post-card:last-child {
+    border-bottom: none; }
+
+.post-date {
+  display: block;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.2em; }
+
+.post-title {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.15em;
+  margin: 0 0 0.3em; }
+  .post-title a {
+    color: #8c1515; }
+  .post-title a:hover {
+    color: crimson; }
+
+.post-excerpt {
+  margin: 0 0 0.3em;
+  padding-bottom: 0 !important; }
+
+.read-more {
+  font-size: 0.85em; }
