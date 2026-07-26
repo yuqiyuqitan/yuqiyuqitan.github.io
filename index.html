@@ -30,8 +30,11 @@
     <div class="column1">
       <h1>Yuqi Tan</h1>
       <p>I am a computational biologist and an instructor at Stanford University, specializing in spatial multi-omics. I integrate machine learning with a deep understanding of molecular and cellular biology to build scalable, open-source computational tools and apply them to some of the field's hardest open questions: how to define and engineer cell identity for regenerative medicine, how tumor architecture predicts and drives immunotherapy response, and how spatial organization in the brain shapes psychiatric disease and appetite regulation. I develop ML/AI-powered methods for 2D and 3D spatial-omics and apply them to explore the spatial organization of cell types in healthy aging and disease. Through directly mentoring nine students, designing and teaching three custom courses, and contributing to three global health projects, I am committed to building a diverse, equitable, and inclusive lab that empowers the next generation of researchers.</p>
+
+    <a href = "https://scholar.google.com/citations?user=zNOpmasAAAAJ&hl=en" class="external-link">Google Scholar.</a>
+    <a href = "docs/CV_Yuqi_Tan.pdf" target="_blank"> CV </a>
     <p> </p>
-    <p><b>Academic training</b></p>
+    <p style="padding-bottom:0.3em;"><b>Academic training</b></p>
     <table class="alternate_color">
       <tr>
         <td>2026&ndash;</td>
@@ -57,7 +60,6 @@
       <span>NIH K99/R00 Pathway to Independence Award <i>&middot; 2025, pending</i></span>
       <span>MD Anderson &ndash; the Next Generation Award <i>&middot; 2025</i></span>
       <span>Rising Star in Engineering Health Award <i>&middot; 2025</i></span>
-      <span>Arthur and Sandra Irving Cancer Immunology Fellow <i>&middot; 2025</i></span>
       <span>France-Stanford Visiting Junior Scholar Fellowship <i>&middot; 2026</i></span>
     </div>
     <details class="more-list">
@@ -70,10 +72,6 @@
         <span>Finalist, Rhodes Scholarship &ndash; Hong Kong <i>&middot; 2013</i></span>
       </div>
     </details>
-    <p> </p>
-
-    <a href = "https://scholar.google.com/citations?user=zNOpmasAAAAJ&hl=en" class="external-link">Google Scholar.</a>
-    <a href = "docs/CV_Yuqi_Tan.pdf" target="_blank"> CV </a>
     </div>
     <figure class="right-side-image column2 align-top">
       <br>
@@ -104,18 +102,26 @@
 
   <div class="column1-full">
       <h2>Selected Publications</h2>
+
+      <ul class="contrib-outline">
+        <li><a href="#contrib-1">1. Developing ML/AI tools for 2D &amp; 3D spatial-omics</a></li>
+        <li><a href="#contrib-2">2. Defining cell identity for stem cell engineering</a></li>
+        <li><a href="#contrib-3">3. Identifying spatial predictors of cancer immunotherapy response</a></li>
+        <li><a href="#contrib-4">4. Delineating the molecular mechanisms behind psychiatric disease and neurometabolism</a></li>
+      </ul>
+
       <p style="font-size:0.85em; color:#555;">Grouped by research focus. <b>Bold</b> = Tan; * = co-first authorship; &Dagger; = corresponding author. Full list in the <a href="docs/CV_Yuqi_Tan.pdf" target="_blank">CV</a> or on <a href="https://scholar.google.com/citations?user=zNOpmasAAAAJ&hl=en" class="external-link">Google Scholar</a>.</p>
 
-      <div class="contribution-block">
-        <h3 class="contribution-title">1. Deep-learning tools for 2D &amp; 3D spatial-omics</h3>
+      <div class="contribution-block" id="contrib-1">
+        <h3 class="contribution-title">1. Developing ML/AI tools for 2D &amp; 3D spatial-omics</h3>
         <p class="contribution-blurb">Multiplexed imaging and spatial transcriptomics generate enormous, complex datasets. I build open-source, deep-learning-powered software that makes these data interpretable, reproducible, and accessible to the wider community.</p>
         <div class="pub-list">
 
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/41309581/" target="_blank"><img src="code/images/spacec.png" alt="SPACEc workflow schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors"><b>Tan*</b>, Kempchen*, Becker*, Haist, Feyaerts, Xiao, Su, Rech, Hickey, and Nolan.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/41309581/" class="external-link" target="_blank">SPACEc: A Streamlined, Interactive Python Workflow for Multiplexed Image Processing and Analysis.</a></i> Nat Commun. 2025 Nov;16(1):10652.</p>
+              <p class="pub-authors"><b>Tan*</b>, Kempchen*, Becker*, Haist, Feyaerts, Xiao, Su, Rech, Hickey, and Nolan.</p>
               <p class="pub-note">An interactive, open-source Python toolkit that takes multiplexed imaging data from raw images to publication-ready analysis in one streamlined workflow.</p>
             </div>
           </div>
@@ -123,8 +129,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/36280720/" target="_blank"><img src="code/images/stellar.png" alt="STELLAR spatial annotation schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors">Brbic*, Cao*, Hickey*, <b>Tan</b>, Snyder, Nolan&Dagger;, and Leskovec&Dagger;.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/36280720/" class="external-link" target="_blank">Annotation of Spatially Resolved Single-cell Data with STELLAR.</a></i> Nat Methods. 2022 Nov;19(11):1411-1418.</p>
+              <p class="pub-authors">Brbic*, Cao*, Hickey*, <b>Tan</b>, Snyder, Nolan&Dagger;, and Leskovec&Dagger;.</p>
               <p class="pub-note">A graph neural network that automatically annotates cell types in spatial data, transferring labels from annotated to unannotated tissues without manual gating.</p>
             </div>
           </div>
@@ -132,8 +138,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://www.biorxiv.org/content/10.64898/2026.06.23.733649v1" target="_blank"><img src="code/images/2D_3D.png" alt="Fault-tolerant 2D-to-3D spatial proteomics reconstruction schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
+              <p class="pub-title"><i><a href="https://www.biorxiv.org/content/10.64898/2026.06.23.733649v1" class="external-link" target="_blank">Fault-tolerant 3D reconstruction from 2D spatial proteomics sections.</a></i> BioRxiv. Jun 2026.</p>
               <p class="pub-authors">Zhang*, <b>Tan*</b>, Snyder, Nolan&Dagger;, and Ma&Dagger;.</p>
-              <p class="pub-title"><i><a href="https://www.biorxiv.org/content/10.64898/2026.06.23.733649v1" class="external-link" target="_blank">Fault-tolerant 3D reconstruction from 2D spatial proteomics sections.</a></i> BioRxiv. Submitted Jun 2026.</p>
               <p class="pub-note">A computational framework that stitches noisy, imperfect 2D tissue sections back into accurate 3D spatial-proteomics volumes.</p>
             </div>
           </div>
@@ -141,8 +147,8 @@
           <div class="pub-card">
             <div class="pub-thumb placeholder">Virtual spatial transcriptomics</div>
             <div class="pub-card-body">
-              <p class="pub-authors">Azher, Nolan&Dagger;, and <b>Tan&Dagger;</b>.</p>
               <p class="pub-title"><i>Target Selection Beats Model Size in Virtual Spatial Transcriptomics.</i> Under review, JITC. Jun 2026.</p>
+              <p class="pub-authors">Azher, Nolan&Dagger;, and <b>Tan&Dagger;</b>.</p>
               <p class="pub-note">Shows that which genes you image matters more than how big your model is &mdash; a practical guide for designing virtual spatial transcriptomics experiments.</p>
             </div>
           </div>
@@ -150,7 +156,7 @@
         </div>
       </div>
 
-      <div class="contribution-block">
+      <div class="contribution-block" id="contrib-2">
         <h3 class="contribution-title">2. Defining cell identity for stem cell engineering</h3>
         <p class="contribution-blurb">Understanding what makes a cell "the right cell" is central to regenerative medicine. I develop machine learning models that quantify and guide cell-type identity, from classifying single-cell profiles to benchmarking engineered cells against their in&nbsp;vivo counterparts.</p>
         <div class="pub-list">
@@ -158,8 +164,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/31377170/" target="_blank"><img src="https://www.biorxiv.org/content/biorxiv/early/2018/12/31/508085/F1.large.jpg" alt="SingleCellNet classifier schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors"><b>Tan</b>, and Cahan.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/31377170/" class="external-link" target="_blank">SingleCellNet: a computational tool to classify single cell RNA-Seq data across platforms and across species.</a></i> Cell Syst. 2019 Aug 28;9(2):207-213.e2.</p>
+              <p class="pub-authors"><b>Tan</b>, and Cahan.</p>
               <p class="pub-note">A classifier that lets researchers compare single-cell data across platforms, species, and labs using a common, interpretable cell-type vocabulary.</p>
             </div>
           </div>
@@ -167,8 +173,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://www.biorxiv.org/content/10.1101/2021.05.07.443179v1" target="_blank"><img src="https://www.biorxiv.org/content/biorxiv/early/2021/05/08/2021.05.07.443179/F1.large.jpg" alt="Embryogenesis single-cell comparison schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
+              <p class="pub-title"><i><a href="https://www.biorxiv.org/content/10.1101/2021.05.07.443179v1" class="external-link" target="_blank">Quantitative comparison of in vitro and in vivo embryogenesis at a single cell resolution.</a></i> BioRxiv. Feb 2024.</p>
               <p class="pub-authors"><b>Tan</b>, Spangler, Han, Farid, Peng, and Cahan.</p>
-              <p class="pub-title"><i><a href="https://www.biorxiv.org/content/10.1101/2021.05.07.443179v1" class="external-link" target="_blank">Quantitative comparison of in vitro and in vivo embryogenesis at a single cell resolution.</a></i> BioRxiv. Under review, Development. Feb 2024.</p>
               <p class="pub-note">Benchmarks lab-grown embryo models against real embryos at single-cell resolution, revealing where in vitro systems succeed and fall short.</p>
             </div>
           </div>
@@ -176,8 +182,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://doi.org/10.1038/nprot.2017.022" target="_blank"><img src="https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fnprot.2017.022/MediaObjects/41596_2017_Article_BFnprot2017022_Fig1_HTML.jpg" alt="CellNet assessment pipeline schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors">Radley, Schwab, <b>Tan</b>, Kim, Lo, and Cahan.</p>
               <p class="pub-title"><i><a href="https://doi.org/10.1038/nprot.2017.022" class="external-link" target="_blank">Assessing engineered cells using CellNet and RNA-Seq.</a></i> Nat Protoc. 2017;12:1089-1102.</p>
+              <p class="pub-authors">Radley, Schwab, <b>Tan</b>, Kim, Lo, and Cahan.</p>
               <p class="pub-note">A step-by-step protocol for using CellNet to objectively score how well engineered cells resemble their target cell type.</p>
             </div>
           </div>
@@ -185,8 +191,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/33290741/" target="_blank"><img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3aed/8164844/bbdb30c3b69d/nihms-1670810-f0001.jpg" alt="Liver organoid gene regulatory network engineering schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors">Velazquez, LeGraw, Moghadam, <b>Tan</b>, Kilbourne, Hislop, Liu, Cats, de Sousa Lopes, Plaisier, Cahan, Kiani, and Ebrahimkhani.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/33290741/" class="external-link" target="_blank">Gene Regulatory Network Analysis and Engineering Directs Development and Vascularization of Multilineage Human Liver Organoids.</a></i> Cell Syst. 2020 Nov 30.</p>
+              <p class="pub-authors">Velazquez, LeGraw, Moghadam, <b>Tan</b>, Kilbourne, Hislop, Liu, Cats, de Sousa Lopes, Plaisier, Cahan, Kiani, and Ebrahimkhani.</p>
               <p class="pub-note">Uses gene regulatory network analysis to guide the engineering of more mature, vascularized human liver organoids.</p>
             </div>
           </div>
@@ -194,16 +200,16 @@
         </div>
       </div>
 
-      <div class="contribution-block">
-        <h3 class="contribution-title">3. Spatial predictors of cancer immunotherapy response</h3>
+      <div class="contribution-block" id="contrib-3">
+        <h3 class="contribution-title">3. Identifying spatial predictors of cancer immunotherapy response</h3>
         <p class="contribution-blurb">Why do some tumors respond to immunotherapy while others resist it? I use spatial profiling to uncover the tissue architecture and immune-cell interactions that predict and drive treatment response &mdash; and to train the next generation of researchers to ask these questions.</p>
         <div class="pub-list">
 
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://www.biorxiv.org/content/10.1101/2025.06.06.657162v1" target="_blank"><img src="https://www.biorxiv.org/content/biorxiv/early/2025/06/06/2025.06.06.657162/F1.large.jpg" alt="Spatial myeloid-CD8 T cell aggregates schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
+              <p class="pub-title"><i><a href="https://www.biorxiv.org/content/10.1101/2025.06.06.657162v1" class="external-link" target="_blank">Spatially organized inflammatory myeloid-CD8+ T cell aggregates linked to Merkel-cell Polyomavirus driven Reorganization of the Tumor Microenvironment.</a></i> BioRxiv. Feb 2026.</p>
               <p class="pub-authors">Haist*, Matusiak*, <b>Tan*</b>, Zimmer, Stege, Kempchen, Mischke, Chu, Weidenthaler-Barth, Barlow, Rogall, Gonzalez, Vaertsch, Goltsev, Grabbe, Hickey, and Nolan.</p>
-              <p class="pub-title"><i><a href="https://www.biorxiv.org/content/10.1101/2025.06.06.657162v1" class="external-link" target="_blank">Spatially organized inflammatory myeloid-CD8+ T cell aggregates linked to Merkel-cell Polyomavirus driven Reorganization of the Tumor Microenvironment.</a></i> BioRxiv. Under review, Nat Commun. Feb 2026.</p>
               <p class="pub-note">Identifies spatially organized immune-cell neighborhoods in Merkel-cell carcinoma that reorganize the tumor microenvironment.</p>
             </div>
           </div>
@@ -211,8 +217,8 @@
           <div class="pub-card">
             <div class="pub-thumb placeholder"><a href="https://pubmed.ncbi.nlm.nih.gov/38085642/" target="_blank"><img src="code/images/Tcell.jpg" alt="T cell" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors">Hickey, Haist, Horowitz, Caraccio, <b>Tan</b>, Rech, Baertsch, Rovira Clave, Zhu, Vasquez, Barlow, Agmon, Goltsev, Sunwoo, Covert, and Nolan.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/38085642/" class="external-link" target="_blank">T Cell Mediated Curation and Restructuring of Tumor Tissue Coordinates an Effective Immune Response.</a></i> Cell Rep. 2023 Dec 26;42(12):113494.</p>
+              <p class="pub-authors">Hickey, Haist, Horowitz, Caraccio, <b>Tan</b>, Rech, Baertsch, Rovira Clave, Zhu, Vasquez, Barlow, Agmon, Goltsev, Sunwoo, Covert, and Nolan.</p>
               <p class="pub-note">Shows how T cells physically remodel tumor tissue architecture during an effective anti-tumor immune response.</p>
             </div>
           </div>
@@ -220,8 +226,8 @@
           <div class="pub-card">
             <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/37730278/" target="_blank"><img src="https://jitc.bmj.com/content/jitc/11/9/e007630/F1.large.jpg" alt="ADOREG melanoma registry study design" loading="lazy" referrerpolicy="no-referrer"></a></div>
             <div class="pub-card-body">
-              <p class="pub-authors">Haist*, Stege*, Rogall, <b>Tan</b>, Wasielewski, Klespe, Meier, Mohr, K&auml;hler, Wichenthal, Schadendorf, Ugurel, Lodde, Zimmer, et al., Grabbe, and Loquai.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/37730278/" class="external-link" target="_blank">Treatment management for BRAF-mutant melanoma patients with tumor recurrence upon adjuvant therapy: A multicenter study from the prospective skin cancer registry ADOREG.</a></i> J Immunother Cancer. 2023 Sep;11(9):e007630.</p>
+              <p class="pub-authors">Haist*, Stege*, Rogall, <b>Tan</b>, Wasielewski, Klespe, Meier, Mohr, K&auml;hler, Wichenthal, Schadendorf, Ugurel, Lodde, Zimmer, et al., Grabbe, and Loquai.</p>
               <p class="pub-note">A multicenter registry study identifying treatment patterns and outcomes for melanoma patients who recur after adjuvant therapy.</p>
             </div>
           </div>
@@ -229,25 +235,26 @@
         </div>
       </div>
 
-      <div class="contribution-block">
-        <h3 class="contribution-title">4. Psychiatric disease, neuro-metabolism</h3>
+      <div class="contribution-block" id="contrib-4">
+        <h3 class="contribution-title">4. Delineating the molecular mechanisms behind psychiatric disease and neurometabolism</h3>
         <p class="contribution-blurb">Beyond cancer, I study how spatial and molecular changes in the brain relate to psychiatric disease, appetite regulation, and neurodevelopment &mdash; from hypothalamic circuits controlling food intake to the molecular signatures of depression.</p>
         <div class="pub-list">
-          <div class="pub-card">
-            <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/39478220/" target="_blank"><img src="https://www.biorxiv.org/content/biorxiv/early/2024/01/26/2024.01.25.577315/F1.large.jpg" alt="Hypothalamic BNC2 neurons appetite schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
-            <div class="pub-card-body">
-              <p class="pub-authors">Tan, Yin, <b>Tan</b>, Ivanov, Plucinska, Ilanges, Herb, Wang, Kosse, Cohen, Lin, and Friedman.</p>
-              <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/39478220/" class="external-link" target="_blank">Leptin Activated Hypothalamic BNC2 Neurons Acutely Suppress Food Intake.</a></i> Nature. 2024 Dec;636(8041):198-205.</p>
-              <p class="pub-note">Identifies a hypothalamic neuron population that leptin activates to acutely suppress food intake.</p>
-            </div>
-          </div>
 
           <div class="pub-card">
             <div class="pub-thumb placeholder">Hippocampus &times; MDD</div>
             <div class="pub-card-body">
+              <p class="pub-title"><i>Spatially resolved multi-omic profiling of human hippocampus reveals region-specific alterations in major depressive disorder.</i> Submitted, May 2025.</p>
               <p class="pub-authors">Xiao*, Su*, <b>Tan*</b>, Deng, Li, Ma, Kim, Bai, Liu, Rosoklija, Sissoko, Wu, Santiago, Dwork, Hen, Mann, Fan&Dagger;, Leong&Dagger;, and Boldrini&Dagger;.</p>
-              <p class="pub-title"><i>Spatially resolved multi-omic profiling of human hippocampus reveals region-specific alterations in major depressive disorder.</i> Submitted. May 2025.</p>
               <p class="pub-note">Maps region-specific molecular changes in the human hippocampus associated with major depressive disorder.</p>
+            </div>
+          </div>
+
+          <div class="pub-card">
+            <div class="pub-thumb"><a href="https://pubmed.ncbi.nlm.nih.gov/39478220/" target="_blank"><img src="https://www.biorxiv.org/content/biorxiv/early/2024/01/26/2024.01.25.577315/F1.large.jpg" alt="Hypothalamic BNC2 neurons appetite schematic" loading="lazy" referrerpolicy="no-referrer"></a></div>
+            <div class="pub-card-body">
+              <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/39478220/" class="external-link" target="_blank">Leptin Activated Hypothalamic BNC2 Neurons Acutely Suppress Food Intake.</a></i> Nature. 2024 Dec;636(8041):198-205.</p>
+              <p class="pub-authors">Tan, Yin, <b>Tan</b>, Ivanov, Plucinska, Ilanges, Herb, Wang, Kosse, Cohen, Lin, and Friedman.</p>
+              <p class="pub-note">Identifies a hypothalamic neuron population that leptin activates to acutely suppress food intake.</p>
             </div>
           </div>
         </div>
@@ -422,12 +429,13 @@
       <h1>Interests</h1>
       <h3>Other areas where I lavish my curiosity and abundant energy</h3>
       <ul>
-        <li>I am a <a href = "http://uhs.jhu.edu/wellness/programs-and-events/fitness-series/" class = "external-link"> certified yoga instructor </a>. </li>
+        <li>I am a <a href = "https://yogasource.com/schedule/" class = "external-link"> certified yoga instructor </a>. </li>
         <li>I love ballroom dancing and salsa, I have also dabbled a bit into swing and argentine tango. </li>
-        <li>I am a avid amature <a href = "http://patterson.audubon.org/" class = "external-link"> bird watcher </a> and I enjoy bird photography.</li>
+        <li>I am a avid amature <a href = "https://baltimorebirding.com/" class = "external-link"> bird watcher </a> and I enjoy bird photography.</li>
         <li>I am a adventurous foodie and self-proclaimed (!!) good chef. </li>
         <li>I love traveling and reading. </li>
         <li>I take <a href = "https://www.bigimprov.org/" class = "external-link"> improvisation lessons </a> here and there. </li>
+        <li>I enjoy learning about  <a href = "https://www.gsb.stanford.edu/exec-ed/programs/stanford-ignite" class = "external-link"> entrepreneurship </a> and the business side of the science. </li>
 
       </ul>
     </div>
@@ -445,26 +453,28 @@
       <h1>Blog</h1>
       <p>Occasional notes on technology, academia, and entrepreneurship.</p>
         <div class="pub-card">
-            <div class="pub-thumb placeholder"><a href="https://pubmed.ncbi.nlm.nih.gov/41524276/" target="_blank">Training the field</a></div>
+            <div class="pub-thumb placeholder"><a href="https://pubmed.ncbi.nlm.nih.gov/41524276/"><img src="code/images/future_leader_icon.png"></a></div>
             <div class="pub-card-body">
               <p class="pub-tag">Perspective</p>
-              <p class="pub-authors"><b>Tan*</b>, Kim*, Mujal, Chen, Weis, Bergaggio, Micevic, Xie, Park, Hor, Papanicolaou, Shobaki, Pomizi, Delconte, Vendramin, Hedge, Han, Su, and Hacohen.</p>
               <p class="pub-title"><i><a href="https://pubmed.ncbi.nlm.nih.gov/41524276/" class="external-link" target="_blank">Training Tomorrow's Leaders in Cancer Immunology.</a></i> Cancer Immunol Res. 2026 Feb;14(2):186-193.</p>
+              <p class="pub-authors"><b>Tan*</b>, Kim*, Mujal, Chen, Weis, Bergaggio, Micevic, Xie, Park, Hor, Papanicolaou, Shobaki, Pomizi, Delconte, Vendramin, Hedge, Han, Su, and Hacohen.</p>
               <p class="pub-note">A perspective on training the next generation of cancer immunologists at the interface of computation and immunology.</p>
             </div>
           </div>
-      <!--     
+<!-- 
       <div class="post-list">
 
         <div class="post-card">
           <span class="post-date">June 2026</span>
-          <h3 class="post-title"><a href="blog/example-post.html">Entrepreneurship vs Starting a lab </a></h3>
-          <p class="post-excerpt"> What did I learn from the Stanford Ignite, Certificate Program in Innovation and Entrepreneurship from the Stanford University Graduate School of Business. </p>
+          <h3 class="post-title"><a href="blog/example-post.html">Replace me: your first post title</a></h3>
+          <p class="post-excerpt">One or two sentences summarizing the post go here &mdash; this is placeholder text to show the layout. Duplicate <code>blog/example-post.html</code> to start a new post.</p>
           <a class="read-more" href="blog/example-post.html">Read more &rarr;</a>
         </div>
 
+
+
       </div>
-     --> 
+-->
     </div>
   </div>
   </div>

@@ -29,6 +29,7 @@
   top: 0;
   max-width: 1050px;
   width: 100%;
+  background-color: white;
   z-index: 2; }
   #mainMenuWrapper:hover #mainMenu {
     line-height: 6em; }
@@ -94,7 +95,7 @@ a {
 .section {
   margin: auto;
   background-color: white;
-  padding: 150px 30px 40px;
+  padding: 95px 30px 40px;
   overflow-y: auto;
   min-height: 100vh;
 	-webkit-font-smoothing: antialiased;
@@ -135,20 +136,32 @@ td {
   margin-top: 0;
   padding-bottom: 0.8em; }
 
+.contrib-outline {
+  list-style: none;
+  padding: 0;
+  margin: 0.6em 0 0.4em; }
+  .contrib-outline li {
+    padding: 0.2em 0; }
+  .contrib-outline a {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 0.95em;
+    font-weight: bold; }
+
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 1.4em; }
+  gap: 1.1em; }
 
 .pub-card {
   display: flex;
   gap: 1.3em;
-  align-items: flex-start; }
+  align-items: center; }
 
 .pub-thumb {
   flex: 0 0 150px;
   width: 150px;
   height: 110px;
+  box-sizing: border-box;
   border-radius: 6px;
   overflow: hidden;
   background-color: #f6f8fa;
@@ -187,7 +200,16 @@ td {
   flex: 1;
   min-width: 0; }
   .pub-card-body p {
-    padding-bottom: 0.3em; }
+    padding-bottom: 0.2em;
+    line-height: 1.5;
+    margin: 0; }
+
+.pub-title {
+  font-weight: 500; }
+
+.pub-authors {
+  font-size: 0.9em;
+  color: #555; }
 
 .pub-note {
   font-size: 0.85em;

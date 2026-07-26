@@ -65,10 +65,21 @@ $(document).ready(function() {
     e.preventDefault();
 
     $target = $(this.hash);
+    //top-level menu items land on a .section, which already has its own
+    //top padding to clear the fixed nav bar. links to anchors *inside* a
+    //section (e.g. the publication outline) don't have that padding, so
+    //pull the scroll target up by the same amount the section padding
+    //provides, keeping the heading visible below the fixed nav.
+    var targetTop = $target.offset().top;
+    if (!$(this).hasClass('menuItem')) {
+      targetTop -= 95;
+    }
     $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
+      'scrollTop': targetTop
     }, 200, 'swing', function() {
-      window.location = '#' + $target.attr('id');
+      //update the URL hash without letting the browser's native anchor
+      //jump re-snap the scroll position (that would undo the offset above)
+      history.replaceState(null, '', '#' + $target.attr('id'));
     });
   });
 
